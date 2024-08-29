@@ -1,0 +1,29 @@
+body {
+    background-color: #AC2A42;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0; 
+}
+
+.container {
+    display: flex;
+    background-color: #F8F6F3;
+    border-radius: 22px;
+    width: 80%; 
+    height: 80%; 
+}
+
+.img {
+    background-color: #5A1F2A;
+    border-radius: 22px;
+    height: 100%;
+    width: 40%;
+}
+
+.content {
+    flex: 1; 
+    padding: 150px; 
+    text-align: center;
+}
