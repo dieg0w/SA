@@ -4,32 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styleCr.css">
 </head>
 <body>
-<div class="container">
-  <div class="painel-esquerdo">
-    <img src="" alt="">
-    <a href='menu.html' id="back-to-menu"><img src="a imagem aqui" alt="Imagem da seta para voltar ao menu"> </a>
-     <div class="texto">
-      <h1>seja bem vindo</h1>
-       <P>ao site Bella Napoli</P>
-     </div>
+  <div class="container">
+    <div class="img"></div>
+    <div class="content">
+      <label>Crie sua conta</label><br><br>
+      <input placeholder="nome" type="text" id="nome"><br><br>
+      <input placeholder="sobrenome" type="text" id="sobrenome"><br><br>
+      <input placeholder="Email" type="email" id="email" ><br><br>
+      <input placeholder="Senha" type="password" id="password" ><br><br>
+      <input placeholder="Confirme sua senha" type="password" id="password2" ><br><br>
+      <div class="agree">
+        <input class="agree" type="checkbox" name="terms" required>
+        <label class="agree" for="terms">  Eu concordo com os Termos e Serviços deste site.</label>
+    </div><br><br>
+    <input href="index.html" class="submit" type="submit" value="Entrar">
+    </div>
   </div>
-    <div class="painel-direito">
-       <h2>Crie sua conta</h2>
-       <div class="dados-usuario">
-          <input placeholder="nome" type="text" id="nome"><br>
-          <input placeholder="sobrenome" type="text" id="sobrenome"><br>
-          <input placeholder="Email" type="email" id="email" ><br>
-          <input placeholder="Senha" type="password" id="password" ><br>
-          <input placeholder="Confirme sua senha" type="password" id="password2" ><br>
-      </div>
-      <div class="terms">
-         <input type="checkbox" name="terms" required>
-         <label for="terms">Eu concordo com os Termos e Serviços deste site.</label>
-     </div>
-     <button type="submit">Criar</button>
-   </div>
-</div>
 </body>
 </html>
+
+

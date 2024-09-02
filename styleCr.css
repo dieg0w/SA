@@ -7,10 +7,7 @@ body {
     align-items: center;
     height: 100vh; 
     margin: 0; 
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+   
 }
 
 .container {
@@ -31,14 +28,13 @@ body {
 .content {
     flex: 1; 
     text-align: center;
-    padding: 170px;
+    padding: 90px;
     
 
 }
 
 label {
     font-size: 65px;
-    font-weight: 500;
 }
 
 input {
@@ -47,23 +43,25 @@ input {
     padding-block: 21px; 
     padding-left: 20px;
     padding-right: 175px;
-    font-family: "Playfair Display", serif;
+    border: none; 
+    outline: none; 
+    font-family: inherit; 
 }
+
 .submit {
     background-color: #ac2a42;
     padding-block: 48pxpx; 
     padding-inline: 55px;
     font-size: 23px;
     color: #F8F6F3;
-    
 }
 
-.forgotPass {
+.agree {
     font-size: 18px; 
     color: #232020;
     text-decoration: none;
     display: flex;
-    justify-content: flex-end;
+    justify-content:center;
 }
 
 
