@@ -42,7 +42,7 @@ input {
     font-size: 18px;
     padding-block: 21px; 
     padding-left: 20px;
-    padding-right: 175px;
+    padding-right: 210px;
     border: none; 
     outline: none; 
     font-family: inherit; 
@@ -66,17 +66,30 @@ input {
 .nome, .sobrenome {
     display: inline-block; 
     width: calc(50% - 10px); 
-    width: 20%;
-    padding-inline: 92px;
+    width: 32%;
+    padding-inline: 192px;
+
+    
 
 }
 .nome{
     display: inline-block; 
 margin-inline: 10px;
+padding-right: 2px;
+padding-left: 10px;
 }
+
+
+
 .sobrenome{
     display: inline-block; 
 margin-inline: 10px;
+padding-left: 12px;
+padding-right: 10px;
+
 }
 
-
+.title{
+    font-weight: 1000;
+    color: #AC2A42;
+}
