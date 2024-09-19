@@ -63,14 +63,20 @@ input {
     display: flex;
     justify-content:center;
 }
+
+.nome-sobrenome{
+    justify-content: space-between;
+    width: 200%;
+    margin: auto;
+    padding-inline-end: 250px;
+    
+}
+
 .nome, .sobrenome {
     display: inline-block; 
     width: calc(50% - 10px); 
     width: 32%;
     padding-inline: 192px;
-
-    
-
 }
 .nome{
     display: inline-block; 
