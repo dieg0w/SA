@@ -1,28 +1,31 @@
+
 const nomeInput = document.getElementById('nome');
 const sobrenomeInput = document.getElementById('sobrenome');
 const emailInput = document.getElementById('email');
 const passwordInput = document.getElementById('password');
 const password2Input = document.getElementById('password2');
 const termsInput = document.querySelector('input[name="terms"]');
-const submitButton = document.querySelector('input[type="submit"]');
 
-submitButton.addEventListener('click', (e) => {
-  e.preventDefault();
+ function submit(){
 
-  if (nomeInput.value && sobrenomeInput.value && emailInput.value && passwordInput.value && password2Input.value && termsInput.checked) {
-    const userData = {
-      nome: nomeInput.value,
-      sobrenome: sobrenomeInput.value,
-      email: emailInput.value,
-      password: passwordInput.value,
-      password2: password2Input.value,
-      terms: termsInput.checked
-    };
+  const nome = nomeInput.value;
+  const sobrenome = sobrenomeInput.value;
+  const email = emailInput.value;
+  const password = passwordInput.value;
+  const password2 = password2Input.value;
+  const terms = termsInput.checked;
 
-    localStorage.setItem('userData', JSON.stringify(userData));
+  const userData = {
+    nome,
+    sobrenome,
+    email,
+    password,
+    password2,
+    terms
+  };
 
-    window.location.href = 'index.html';
-  } else {
-    alert('Por favor, preencha todos os campos!');
-  }
-});
+
+  const userDataJSON = JSON.stringify(userData);
+  localStorage.setItem('userData', userDataJSON);
+  document.querySelector('.submit').form.reset();
+};
