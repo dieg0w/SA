@@ -1,35 +1,45 @@
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styleCr.css">
+    <link rel="stylesheet" href="style (1).css">
+    <script src="crie.js"></script>
 </head>
+
 <body>
-  <div class="container">
-    <div class="img"></div>
-    <div class="content">
-      <label class="title">Crie sua conta</label>
-      <div class="data">
-        <div class="nome-sobrenome">
-          <input class="nome" placeholder="Nome" type="text" id="nome">
-          <input class="sobrenome" placeholder="Sobrenome" type="text" id="sobrenome">
+    <div class="container">
+
+        <div class="img">
+            <div class="back-button">
+                <img class="arrow" src="https://i.imgur.com/Ykxn1L4.png">
+            </div>
         </div>
-        <div class="Email">
-          <input placeholder="Email" type="email" id="email">
+
+        <div class="content">
+            <div class="data">
+
+                <h2 class="titulo">Crie sua conta</h2>
+                <div class="inputs">
+                    <div class="n-sn">
+                        <input class="nome" placeholder="Nome" type="text" id="nome" required>
+                        <input class="sobrenome" placeholder="Sobrenome" type="text" id="sobrenome" required>
+                    </div>
+                    <input class="email" placeholder="Email" type="email" id="email" required>
+                    <input class="password" placeholder="Senha" type="password" id="password" required>
+                    <input class="c-password" placeholder="Confirme a senha" type="password" id="c-password" required>
+                    <div class="checkbox-div">
+                        <input class="checkbox" type="checkbox" id="checkbox" required>
+                        <label for="checkbox" class="agree-text">Eu concordo com os <a href="#">Termos e Serviços</a> desse site.</label>
+                    </div>
+                    
+                    <div class="submit-c"><button class="submit" onclick="submit()">Entrar</button></div>
+                </div>
+
+            </div>
         </div>
-        <div class="Senha">
-          <input placeholder="Senha" type="password" id="password">
-          <input placeholder="Confirme sua senha" type="password" id="password2">
-        </div>
-          <div class="agree">
-          <input class="agree" type="checkbox" name="terms" required>
-          <label class="agree" for="terms"> Eu concordo com os Termos e Serviços deste site.</label>
-        </div>
-      </div>
-      <input onclick="submit()" href="index.html" class="submit" type="submit" value="Entrar">
     </div>
-  </div>
-  <script src="crie.js"></script>
 </body>
+
 </html>
