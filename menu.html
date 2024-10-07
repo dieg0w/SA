@@ -4,10 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu.css">
+    <script src="menu.js"></script>
     <title>menu</title>
 </head>
 <body>
-   
-
+    <div class="container">
+        <h2 class="titulo">Formulário de Pedido de Pizza</h2>
+        <form class="menu" action="" method="post">
+            <ul>
+                <li>
+                    <label for="pizza">Pizza</label>
+                    <input type="number" id="pizza" name="pizza" value="1" min="1" max="10">
+                    <button class="botao incremento" onclick="incrementar('pizza')">+</button>
+                    <button class="botao decremento" onclick="decrementar('pizza')">-</button>
+                </li>
+                <li>
+                    <label for="hamburguer">Hamburguer</label>
+                    <input type="number" id="hamburguer" name="hamburguer" value="1" min="1" max="10">
+                    <button class="botao incremento" onclick="incrementar('hamburguer')">+</button>
+                    <button class="botao decremento" onclick="decrementar('hamburguer')">-</button>
+                </li>
+                <li>
+                    <label for="salada">Salada</label>
+                    <input type="number" id="salada" name="salada" value="1" min="1" max="10">
+                    <button class="botao incremento" onclick="incrementar('salada')">+</button>
+                    <button class="botao decremento" onclick="decrementar('salada')">-</button>
+                </li>
+                <li>
+                    <label for="bebida">Bebida</label>
+                    <input type="number" id="bebida" name="bebida" value="1" min="1" max="10">
+                    <button class="botao incremento" onclick="incrementar('bebida')">+</button>
+                    <button class="botao decremento" onclick="decrementar('bebida')">-</button>
+                </li>
+            </ul>
+            <button class="botao" type="submit">Enviar Pedido</button>
+        </form>
+    </div>
 </body>
 </html>
